@@ -9,6 +9,7 @@ import java.time.LocalDateTime;
 @RestController
 public class LocalDateTimeDisplay
 {
+
     @RequestMapping (method = RequestMethod.GET, path = "/time")
     public String displayCurrentTime (){
         return LocalDateTime.now().toString();
